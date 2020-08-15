@@ -30,6 +30,65 @@ body {
             menu {
                 list-style: none;
                 text-transform: uppercase;
+                display: flex;
+                li {
+                    padding-left: 15px;
+                    a {
+                        color: white;
+                        font-size: 20px;
+                        text-decoration: none;
+                        &:hover {
+                            color:#fc635e;
+                            border-bottom: #fc635e solid 3px;
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .mainText {
+            text-align: center;
+            h1 {
+                text-transform: uppercase;
+                font-size: 50px;
+                color: white;
+                span {
+                    color: #fc635e; 
+                }
+            }
+            p {
+                color: white;
+                font-size: 22px;
+            }
+            a {
+                color: #fc635e;
+                text-decoration: none;
+                font-size: 22px;
+                border: 2px solid #fc635e;
+                padding: 12px 28px;
+                border-radius: 8px;
+                &:hover {
+                    background: #fc635e;
+                    color: white;
+                }
+            }
+        } 
+        .botHeader {
+            display: flex;
+            justify-content: center;
+            a {
+                font-size: 30px;
+                text-decoration: none;
+                color: white;
+                border-radius: 50%;
+                background: #fc635e;
+                display: flex;
+                width: 45px;
+                height: 45px;
+                justify-content: center;
+                &:hover {
+                    opacity: .7;
+                }
             }
         }
     }
