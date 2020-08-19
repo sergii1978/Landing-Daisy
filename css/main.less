@@ -1,6 +1,40 @@
 body {
     margin: 0 auto;
     max-width: 1260px;
+    a.arrowDown {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        font-size: 30px;
+        text-decoration: none;
+        color:  #fc635e;
+        border-radius: 50%;
+        border: 2px solid #fc635e;
+        background: transparent;
+        display: flex;
+        width: 45px;
+        height: 45px;
+        justify-content: center;
+        &:hover {
+            background: #fc635e;
+            // opacity: .7;
+            color: white;
+        }
+    }
+
+    a.btn {
+        color: #fc635e;
+        text-decoration: none;
+        font-size: 22px;
+        border: 2px solid #fc635e;
+        padding: 12px 28px;
+        border-radius: 8px;
+        &:hover {
+            background: #fc635e;
+            color: white;
+        }
+    }
+
     header {
         background: url('../img/background.png') no-repeat;
         display: flex;
@@ -45,6 +79,7 @@ body {
                 }
             }
         }
+
         .mainText {
             text-align: center;
             h1 {
@@ -59,38 +94,11 @@ body {
                 color: white;
                 font-size: 22px;
             }
-            a {
-                color: #fc635e;
-                text-decoration: none;
-                font-size: 22px;
-                border: 2px solid #fc635e;
-                padding: 12px 28px;
-                border-radius: 8px;
-                &:hover {
-                    background: #fc635e;
-                    color: white;
-                }
-            }
+
         } 
-        .botHeader {
-            display: flex;
-            justify-content: center;
-            a {
-                font-size: 30px;
-                text-decoration: none;
-                color: white;
-                border-radius: 50%;
-                background: #fc635e;
-                display: flex;
-                width: 45px;
-                height: 45px;
-                justify-content: center;
-                &:hover {
-                    opacity: .7;
-                }
-            }
-        }
+
     }
+
     .recieve {
         margin-top: 0;
         text-align: center;
@@ -102,18 +110,27 @@ body {
             margin-bottom: 50px;
         }
         h1 {
-          text-decoration: underline;
             margin: 0 auto;
-            text-transform: uppercase;
+            padding-bottom: 11px;
             font-size: 40px;
+            text-transform: uppercase;
             span {
-              color: #fc635e; 
-                border: 1px solid  #fc635e;
-                display: flex;
+              color: #fc635e;
             }
         }
+        
+        h1::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 340px;
+            height: 2px;
+            background-color: #ADADAD;
+        }
+
         a {
-          font-size: 30px;
+            font-size: 30px;
             text-decoration: none;
             color: #fc635e;
             display: flex;
@@ -127,12 +144,19 @@ body {
                 color: white;
             }
         }
-    }
-    .icons {
-        display: flex;
-        h3 {
-            text-decoration: underline;
-            text-transform: uppercase;
+
+        .icons {
+            display: flex;
+            h3 {
+                text-decoration: underline;
+                text-transform: uppercase;
+            }
         }
     }
+
+    .expand {
+        background: url('../img/expand.png') center no-repeat;
+        min-height: 640px;
+    }
+
 }
