@@ -102,23 +102,30 @@ body .recieve p {
   font-size: 22px;
   margin-bottom: 50px;
 }
-body .recieve h1 {
+body .recieve .section_title {
+  display: block;
+  position: relative;
   margin: 0 auto;
-  padding-bottom: 11px;
   font-size: 40px;
   text-transform: uppercase;
 }
-body .recieve h1 span {
+body .recieve .section_title span {
   color: #fc635e;
 }
-body .recieve h1::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 340px;
-  height: 2px;
+body .recieve .section_title:after {
+  display: block;
   background-color: #ADADAD;
+  content: " ";
+  height: 2px;
+  width: 0%;
+  left: 50%;
+  position: absolute;
+  transition: width 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+body .recieve .section_title .section_title:hover:after,
+body .recieve .section_title .section_title:focus:after {
+  width: 100%;
 }
 body .recieve a {
   font-size: 30px;

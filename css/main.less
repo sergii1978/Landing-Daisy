@@ -109,25 +109,34 @@ body {
             font-size: 22px;
             margin-bottom: 50px;
         }
-        h1 {
+
+        .section_title {
+            display: block;
+            position: relative;
             margin: 0 auto;
-            padding-bottom: 11px;
             font-size: 40px;
             text-transform: uppercase;
             span {
               color: #fc635e;
             }
+            &:after {
+                display: block;
+                background-color: #ADADAD;
+                content: " ";
+                height: 2px;
+                width: 0%;
+                left: 50%;
+                position:absolute;
+                transition: width .3s ease-in-out;
+                transform:translateX(-50%);
+            }
+
+            .section_title:hover:after,
+            .section_title:focus:after {
+                width: 100%;
+            }
         }
         
-        h1::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            max-width: 340px;
-            height: 2px;
-            background-color: #ADADAD;
-        }
 
         a {
             font-size: 30px;
