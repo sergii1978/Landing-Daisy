@@ -31,8 +31,27 @@ body a.btn:hover {
   background: #fc635e;
   color: white;
 }
+body .section-promo {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: white;
+}
+body .section-promo span {
+  color: #fc635e;
+}
+body .section-title {
+  display: inline-block;
+  font-size: 40px;
+  text-transform: uppercase;
+  border-bottom: solid 2px #ADADAD;
+}
+body .section-title span {
+  color: #fc635e;
+}
 body header {
   background: url('../img/background.png') no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   min-height: 600px;
@@ -79,55 +98,29 @@ body header nav menu li a:hover {
 body header .mainText {
   text-align: center;
 }
-body header .mainText h1 {
-  text-transform: uppercase;
-  font-size: 50px;
-  color: white;
-}
-body header .mainText h1 span {
-  color: #fc635e;
+body header .mainText .section-promo {
+  font-weight: normal;
 }
 body header .mainText p {
   color: white;
   font-size: 22px;
 }
-body .recieve {
+body .receive {
   margin-top: 0;
   text-align: center;
   background: white;
   padding: 70px 50px 10px 50px;
   color: #868686;
 }
-body .recieve p {
-  font-size: 22px;
+body .receive p {
+  font-size: 20px;
   margin-bottom: 50px;
-}
-body .recieve .section_title {
-  display: block;
-  position: relative;
+  color: #ADADAD;
+  max-width: 500px;
   margin: 0 auto;
-  font-size: 40px;
-  text-transform: uppercase;
+  margin-bottom: 80px;
 }
-body .recieve .section_title span {
-  color: #fc635e;
-}
-body .recieve .section_title:after {
-  display: block;
-  background-color: #ADADAD;
-  content: " ";
-  height: 2px;
-  width: 0%;
-  left: 50%;
-  position: absolute;
-  transition: width 0.3s ease-in-out;
-  transform: translateX(-50%);
-}
-body .recieve .section_title .section_title:hover:after,
-body .recieve .section_title .section_title:focus:after {
-  width: 100%;
-}
-body .recieve a {
+body .receive a {
   font-size: 30px;
   text-decoration: none;
   color: #fc635e;
@@ -138,16 +131,23 @@ body .recieve a {
   width: 45px;
   height: 45px;
 }
-body .recieve a:hover {
+body .receive a:hover {
   background: #fc635e;
   color: white;
 }
-body .recieve .icons {
+body .receive .icons {
   display: flex;
+  justify-content: space-between;
 }
-body .recieve .icons h3 {
+body .receive .icons .icons-cont {
+  max-width: 200px;
+}
+body .receive .icons .icons-cont h3 {
   text-decoration: underline;
   text-transform: uppercase;
+}
+body .receive .icons .icons-cont p {
+  font-size: 15px;
 }
 body .expand {
   background: url('../img/expand.png') center no-repeat;
