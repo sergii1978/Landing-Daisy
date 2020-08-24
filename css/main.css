@@ -64,17 +64,58 @@ body header nav {
   justify-content: space-around;
   align-items: center;
 }
-body header nav > a {
-  color: white;
-  font-size: 25px;
+body header nav .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-self: center;
+}
+body header nav .hexagon {
+  position: relative;
+  width: 70px;
+  height: 40.41px;
+  background-color: #fc645f;
+  margin: 20.21px 0;
+}
+body header nav .hexagon p {
+  margin: 0 auto;
+  font-size: 35px;
+  font-family: "PF Encore Sans Pro";
+  color: #0c252d;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+body header nav .hexagon:before,
+body header nav .hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+}
+body header nav .hexagon:before {
+  bottom: 100%;
+  border-bottom: 20.21px solid #fc645f;
+}
+body header nav .hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 20.21px solid #fc645f;
+}
+body header nav > .logo .logo-link {
+  display: flex;
+  align-content: center;
+  align-self: center;
+  font-size: 24px;
+  font-family: 'Gotham Pro';
+  color: #ffffff;
   font-weight: bold;
   text-decoration: none;
+  letter-spacing: 2px;
+  padding-left: 20px;
 }
-body header nav > a img {
-  padding-right: 15px;
-  vertical-align: middle;
-}
-body header nav .logo:hover img {
+body header nav .logo:hover {
   opacity: 0.7;
 }
 body header nav menu {

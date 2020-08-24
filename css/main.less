@@ -70,19 +70,82 @@ body {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            >a {
-                color: white;
-                font-size: 25px;
-                font-weight: bold;
-                text-decoration: none;
-                img {
-                    padding-right: 15px;
-                    vertical-align: middle;
-                }
+            // >a {
+            //     color: white;
+            //     font-size: 25px;
+            //     font-weight: bold;
+            //     text-decoration: none;
+            //     img {
+            //         padding-right: 15px;
+            //         vertical-align: middle;
+            //     }
+            // }
+            // .logo:hover img {
+            //     opacity: 0.7;
+            // }
+            .logo {
+                display: flex;
+                justify-content: flex-start;
+                align-content: center;
+                align-self: center;
             }
-            .logo:hover img {
+            .hexagon {
+                position: relative;
+                width: 70px; 
+                height: 40.41px;
+                background-color: #fc645f;
+                margin: 20.21px 0;
+                // text-align: center;
+              }
+
+              .hexagon p {
+                  margin: 0 auto;
+                    font-size: 35px;
+                    font-family: "PF Encore Sans Pro";
+                    color: rgb(12, 37, 45);
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-align: center;
+                    // line-height: 1; 
+              }
+              
+              .hexagon:before,
+              .hexagon:after {
+                content: "";
+                position: absolute;
+                width: 0;
+                border-left: 35px solid transparent;
+                border-right: 35px solid transparent;
+              }
+              
+              .hexagon:before {
+                bottom: 100%;
+                border-bottom: 20.21px solid #fc645f;
+              }
+              
+              .hexagon:after {
+                top: 100%;
+                width: 0;
+                border-top: 20.21px solid #fc645f;
+              }
+
+              >.logo .logo-link {
+                display: flex;
+                align-content: center;
+                align-self: center;
+                font-size: 24px;
+                font-family: 'Gotham Pro';
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                    text-decoration: none;
+                    letter-spacing: 2px;
+                    padding-left: 20px;
+              }
+
+                .logo:hover {
                 opacity: 0.7;
             }
+
             menu {
                 list-style: none;
                 text-transform: uppercase;
