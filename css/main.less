@@ -1,20 +1,26 @@
 body {
     margin: 0 auto;
     max-width: 1260px;
+    font-family: "PF Encore Sans Pro";
+    div.cont {
+        max-width: 960px;
+        margin: 0 auto;
+        padding-bottom: 25px;
+        text-align: center;
+    }
     a.arrowDown {
         display: flex;
         justify-content: center;
         margin: 0 auto;
         font-size: 30px;
+        line-height: 45px;
         text-decoration: none;
         color:  #fc635e;
         border-radius: 50%;
         border: 2px solid #fc635e;
         background: transparent;
-        display: flex;
         width: 45px;
         height: 45px;
-        justify-content: center;
         &:hover {
             background: #fc635e;
             // opacity: .7;
@@ -39,11 +45,26 @@ body {
         font-weight: normal;
         text-transform: uppercase;
         font-size: 50px;
+        font-weight: normal;
+        line-height: 50px;
         color: white;
         span {
             color: #fc635e; 
         }
     }
+
+    .Clients_in_your_business {
+        font-size: 51px;
+        font-family: "Myriad Pro";
+        color: rgb(252, 99, 94);
+        text-transform: uppercase;
+        line-height: 0.706;
+        position: absolute;
+        left: 337.937px;
+        top: 282.497px;
+        z-index: 18;
+      }
+      
 
     .section-title {
         display: inline-block;
@@ -60,15 +81,13 @@ body {
     header {
         background: url('../img/background.png') no-repeat;
         background-size: cover;
-        display: flex;
-        flex-direction: column;
         min-height: 600px;
         width: 100%;
         max-width: 1260px;
-        justify-content: space-around;
+        padding-top: 25px;
         nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             // >a {
             //     color: white;
@@ -90,6 +109,7 @@ body {
                 align-self: center;
             }
             .hexagon {
+                display: flex;
                 position: relative;
                 width: 70px; 
                 height: 40.41px;
@@ -144,18 +164,22 @@ body {
 
                 .logo:hover {
                 opacity: 0.7;
-            }
+            }              
 
             menu {
                 list-style: none;
                 text-transform: uppercase;
                 display: flex;
+                justify-content: space-between;
                 li {
-                    padding-left: 15px;
+                    padding-left: 50px;
                     a {
-                        color: white;
-                        font-size: 20px;
+                        color: rgb(255, 255, 255);
+                        font-size: 16px;
+                        font-weight: 300;
+                        text-transform: uppercase;
                         text-decoration: none;
+                        line-height: 2.25;
                         &:hover {
                             color:#fc635e;
                             border-bottom: #fc635e solid 3px;
@@ -167,6 +191,7 @@ body {
         }
 
         .mainText {
+            margin-top: 190px;
             text-align: center;
             .section-promo {
                 font-weight: normal;
@@ -284,6 +309,13 @@ body {
                 margin-top: 50px;
             }
           
+    }
+    .process {
+        text-align: center;
+        p {
+            max-width: 500px;
+
+        }
     }
 
 }
