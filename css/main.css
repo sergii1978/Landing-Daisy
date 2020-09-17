@@ -1,19 +1,30 @@
 body {
   margin: 0 auto;
   max-width: 1260px;
+  font-family: "Helvetica", "Tahoma", "PF Encore Sans Pro", sans-serif;
+  /*--header--*/
+  /*--section receive--*/
+  /*--section expand--*/
+}
+body div.cont {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+  text-align: center;
 }
 body a.arrowDown {
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   font-size: 30px;
+  line-height: 45px;
   text-decoration: none;
   color: #fc635e;
   border-radius: 50%;
   border: 2px solid #fc635e;
   background: transparent;
-  display: flex;
   width: 45px;
   height: 45px;
-  justify-content: center;
 }
 body a.arrowDown:hover {
   background: #fc635e;
@@ -32,9 +43,10 @@ body a.btn:hover {
   color: white;
 }
 body .section-promo {
-  font-weight: normal;
   text-transform: uppercase;
   font-size: 50px;
+  font-weight: normal;
+  line-height: 50px;
   color: white;
 }
 body .section-promo span {
@@ -52,43 +64,87 @@ body .section-title span {
 body header {
   background: url('../img/background.png') no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
   min-height: 600px;
   width: 100%;
   max-width: 1260px;
-  justify-content: space-around;
+  padding-top: 25px;
 }
 body header nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
-body header nav > a {
-  color: white;
-  font-size: 25px;
+body header nav .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-self: center;
+}
+body header nav .hexagon {
+  display: flex;
+  position: relative;
+  width: 70px;
+  height: 40.41px;
+  background-color: #fc645f;
+  margin: 20.21px 0;
+}
+body header nav .hexagon p {
+  margin: 0 auto;
+  font-size: 35px;
+  font-family: "PF Encore Sans Pro";
+  color: #0c252d;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+body header nav .hexagon:before,
+body header nav .hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+}
+body header nav .hexagon:before {
+  bottom: 100%;
+  border-bottom: 20.21px solid #fc645f;
+}
+body header nav .hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 20.21px solid #fc645f;
+}
+body header nav > .logo .logo-link {
+  display: flex;
+  align-content: center;
+  align-self: center;
+  font-size: 24px;
+  font-family: 'Gotham Pro';
+  color: #ffffff;
   font-weight: bold;
   text-decoration: none;
+  letter-spacing: 2px;
+  padding-left: 20px;
 }
-body header nav > a img {
-  padding-right: 15px;
-  vertical-align: middle;
-}
-body header nav .logo:hover img {
+body header nav .logo:hover {
   opacity: 0.7;
 }
 body header nav menu {
   list-style: none;
   text-transform: uppercase;
   display: flex;
+  justify-content: space-between;
 }
 body header nav menu li {
-  padding-left: 15px;
+  padding-left: 50px;
 }
 body header nav menu li a {
-  color: white;
-  font-size: 20px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
   text-decoration: none;
+  line-height: 2.25;
 }
 body header nav menu li a:hover {
   color: #fc635e;
@@ -96,14 +152,30 @@ body header nav menu li a:hover {
   padding-bottom: 5px;
 }
 body header .mainText {
+  margin-top: 190px;
+  margin-bottom: 60px;
   text-align: center;
 }
 body header .mainText .section-promo {
+  margin: 0 auto;
+  margin-bottom: 28px;
+  font-family: "Myriad Pro";
   font-weight: normal;
 }
 body header .mainText p {
-  color: white;
+  margin: 0 auto;
+  font-family: "Myriad Pro";
   font-size: 22px;
+  color: white;
+}
+body header .btn {
+  margin: 0 auto;
+  margin-bottom: 240px;
+}
+body header .arrowDown {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 250px;
 }
 body .receive {
   margin-top: 0;
@@ -150,6 +222,32 @@ body .receive .icons .icons-cont p {
   font-size: 15px;
 }
 body .expand {
-  background: url('../img/expand.png') center no-repeat;
-  min-height: 640px;
+  background: url('../img/bg_1.png') center no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 92px;
+  padding-bottom: 20px;
+}
+body .expand .expand-cont {
+  margin: 0 auto;
+  border-width: 8px;
+  border-color: rgba(255, 255, 255, 0.102);
+  border-style: solid;
+  max-width: 924px;
+  padding-top: 125px;
+  padding-bottom: 100px;
+}
+body .expand .expand-cont .section-promo {
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+body .expand .arrowDown {
+  margin-top: 50px;
+}
+body .process {
+  text-align: center;
+}
+body .process p {
+  margin: 0 auto;
+  max-width: 500px;
 }
