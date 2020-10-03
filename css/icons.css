@@ -1,25 +1,14 @@
-#icon1,#icon2,#icon3,#icon4 {
-    .cls-1 {
-        fill: #fe8682;
-      }
 
-      .cls-1, .cls-2, .cls-3 {
-        fill-rule: evenodd;
-      }
-
-      .cls-2 {
-        fill: #fc635e;
-      }
-
-      .cls-3 {
-        fill: #fff;
-      }
+.icon {
+    max-width: 116px;
+    max-height: 116px;
 }
 
-//icon1
-#icon1:hover .cls-1 {
+/*--icon1--*/
+#icon1:hover .cls-1{
     fill: #fc635e;
 }
+
 #icon1:hover .cls-2 {
     fill: #fff;
 }
@@ -27,10 +16,11 @@
     fill: #fe8682;
 }
 
-//icon2
-#icon2:hover .cls-1 {
+/*--icon2--*/
+#icon2:hover .cls-1{
     fill: #fc635e;
 }
+
 #icon2:hover .cls-2 {
     fill: #fff;
 }
@@ -38,10 +28,11 @@
     fill: #fe8682;
 }
 
-//icon3
-#icon3:hover .cls-1 {
+/*--icon3--*/
+#icon3:hover .cls-1{
     fill: #fc635e;
 }
+
 #icon3:hover .cls-2 {
     fill: #fff;
 }
@@ -49,10 +40,11 @@
     fill: #fe8682;
 }
 
-//icon4
-#icon4:hover .cls-1 {
+/*--icon4--*/
+#icon4:hover .cls-1{
     fill: #fc635e;
 }
+
 #icon4:hover .cls-2 {
     fill: #fff;
 }
