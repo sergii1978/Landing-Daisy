@@ -369,27 +369,83 @@ body {
     /*--section we do--*/ 
     .we_do {
         text-align: center;
-        background-color: #f2f2f2;
-        .section-block {
-            .section-text  {
-                max-width: 400px;
-                text-align: left;
-                    h3 {
-                        font-size: 28px;
-                        color: rgb(134, 134, 134);
-                        text-transform: uppercase;
-                        line-height: 40px;    
+            .we_do-grey {
+                background-color: #f2f2f2;
+                    .section-block .section-text  {
+                        max-width: 400px;
+                        text-align: left;
+                                h3 {
+                                    font-size: 28px;
+                                    color: rgb(134, 134, 134);
+                                    text-transform: uppercase;
+                                    line-height: 40px; 
+                                    border-left: 11px solid #fc645f; 
+                                    padding-left: 12px;  
+                                }
+                                p {
+                                    font-size: 15px;
+                                    color: rgb(158, 152, 152);
+                                    line-height: 1.599;
+                                    text-align: left;
+                                }
+                                a.section-block_details {
+                                    width: 167px;
+                                    height: 44px;
+                                    border-radius: 7px;
+                                    background-color: rgb(252, 99, 94);
+                                    font-size: 20px;
+                                    font-family: "PF Encore Sans Pro";
+                                    color: rgb(242, 242, 242);
+                                    line-height: 1.299;
+                                    text-align: center;
+                                    text-decoration: none;
+                                }      
+                            }
+                            img {
+                                width: 100%;
+                                height: auto;
+                            } 
+                        }    
                     }
-                    p {
-                        font-size: 15px;
-                        color: rgb(158, 152, 152);
-                        line-height: 1.599;
-                    }
+            }
+                .we_do-white {
+                    background-color: #ffffff;
+                        .section-block  .section-text  {
+                            max-width: 400px;
+                            text-align: left;
+                                h3 {
+                                    font-size: 28px;
+                                    color: rgb(134, 134, 134);
+                                    text-transform: uppercase;
+                                    text-align: right;
+                                    line-height: 40px; 
+                                    border-right: 11px solid #fc645f; 
+                                    padding-right: 12px;  
+                                }
+                                p {
+                                    font-size: 15px;
+                                    color: rgb(158, 152, 152);
+                                    line-height: 1.599;
+                                    text-align: right;
+                                }
+                                button {
+                                    width: 167px;
+                                    height: 44px;
+                                    border-radius: 7px;
+                                    background-color: rgb(252, 99, 94);
+                                    font-size: 20px;
+                                    font-family: "PF Encore Sans Pro";
+                                    color: rgb(242, 242, 242);
+                                    line-height: 1.299;
+                                    text-align: center;
+                                }
+                            }
+                            img {
+                                width: 100%;
+                                height: auto;
+                            } 
+                        }
+ 
                 }
-                img {
-                    width: 100%;
-                    height: auto;
-                }      
             }
         }
-    }
