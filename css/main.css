@@ -304,9 +304,19 @@ body .we_do .we_do-grey .section-block .section-text p {
   text-align: left;
 }
 body .we_do .we_do-grey .section-block .section-text button {
-  width: ;
+  width: 167px;
+  height: 44px;
+  border-radius: 7px;
+  background-color: #fc635e;
+  font-size: 20px;
+  font-family: "PF Encore Sans Pro";
+  font-weight: 200;
+  color: #f2f2f2;
+  line-height: 1.299;
+  text-align: center;
+  text-decoration: none;
 }
-body .we_do .we_do-grey .section-block img {
+body .we_do .we_do-grey img {
   width: 100%;
   height: auto;
 }
@@ -332,7 +342,55 @@ body .we_do .we_do-white .section-block .section-text p {
   line-height: 1.599;
   text-align: right;
 }
-body .we_do .we_do-white .section-block img {
+body .we_do .we_do-white .section-block .section-text button {
+  width: 167px;
+  height: 44px;
+  border-radius: 7px;
+  background-color: #fc635e;
+  font-size: 20px;
+  font-weight: 200;
+  font-family: "PF Encore Sans Pro";
+  color: #f2f2f2;
+  line-height: 1.299;
+  text-align: center;
+}
+body .we_do .we_do-white img {
   width: 100%;
   height: auto;
+}
+body .portfolio menu {
+  list-style: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #868686;
+  border-bottom: 1px solid #868686;
+  padding: 24px 0;
+  text-align: center;
+  align-self: center;
+}
+body .portfolio menu .controls {
+  display: flex;
+  justify-content: space-between;
+}
+body .portfolio menu .controls li {
+  display: flex;
+  justify-content: space-between;
+  color: #868686;
+  font-size: 20px;
+  font-family: "PF Encore Sans Pro";
+  line-height: 1.299;
+}
+body .portfolio menu .controls li button {
+  font-size: 20px;
+  font-family: "PF Encore Sans Pro";
+  color: #fc635e;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  line-height: 1.299;
+  text-align: center;
+  font-weight: 300;
+  text-decoration: none;
+  cursor: pointer;
 }

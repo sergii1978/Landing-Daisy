@@ -369,83 +369,128 @@ body {
     /*--section we do--*/ 
     .we_do {
         text-align: center;
-            .we_do-grey {
-                background-color: #f2f2f2;
-                    .section-block .section-text  {
-                        max-width: 400px;
-                        text-align: left;
-                                h3 {
-                                    font-size: 28px;
-                                    color: rgb(134, 134, 134);
-                                    text-transform: uppercase;
-                                    line-height: 40px; 
-                                    border-left: 11px solid #fc645f; 
-                                    padding-left: 12px;  
-                                }
-                                p {
-                                    font-size: 15px;
-                                    color: rgb(158, 152, 152);
-                                    line-height: 1.599;
-                                    text-align: left;
-                                }
-                                a.section-block_details {
-                                    width: 167px;
-                                    height: 44px;
-                                    border-radius: 7px;
-                                    background-color: rgb(252, 99, 94);
-                                    font-size: 20px;
-                                    font-family: "PF Encore Sans Pro";
-                                    color: rgb(242, 242, 242);
-                                    line-height: 1.299;
-                                    text-align: center;
-                                    text-decoration: none;
-                                }      
+        .we_do-grey {
+            background-color: #f2f2f2;
+                .section-block .section-text  {
+                    max-width: 400px;
+                    text-align: left;
+                            h3 {
+                                font-size: 28px;
+                                color: rgb(134, 134, 134);
+                                text-transform: uppercase;
+                                line-height: 40px; 
+                                border-left: 11px solid #fc645f; 
+                                padding-left: 12px;  
                             }
-                            img {
-                                width: 100%;
-                                height: auto;
-                            } 
-                        }    
-                    }
-            }
-                .we_do-white {
-                    background-color: #ffffff;
-                        .section-block  .section-text  {
-                            max-width: 400px;
-                            text-align: left;
-                                h3 {
-                                    font-size: 28px;
-                                    color: rgb(134, 134, 134);
-                                    text-transform: uppercase;
-                                    text-align: right;
-                                    line-height: 40px; 
-                                    border-right: 11px solid #fc645f; 
-                                    padding-right: 12px;  
-                                }
-                                p {
-                                    font-size: 15px;
-                                    color: rgb(158, 152, 152);
-                                    line-height: 1.599;
-                                    text-align: right;
-                                }
-                                button {
-                                    width: 167px;
-                                    height: 44px;
-                                    border-radius: 7px;
-                                    background-color: rgb(252, 99, 94);
-                                    font-size: 20px;
-                                    font-family: "PF Encore Sans Pro";
-                                    color: rgb(242, 242, 242);
-                                    line-height: 1.299;
-                                    text-align: center;
-                                }
+                            p {
+                                font-size: 15px;
+                                color: rgb(158, 152, 152);
+                                line-height: 1.599;
+                                text-align: left;
                             }
-                            img {
-                                width: 100%;
-                                height: auto;
-                            } 
+                            button {
+                                width: 167px;
+                                height: 44px;
+                                border-radius: 7px;
+                                background-color: rgb(252, 99, 94);
+                                font-size: 20px;
+                                font-family: "PF Encore Sans Pro";
+                                font-weight: 200;
+                                color: rgb(242, 242, 242);
+                                line-height: 1.299;
+                                text-align: center;
+                                text-decoration: none;
+                            }      
                         }
- 
+                        img {
+                            width: 100%;
+                            height: auto;
+                        } 
+        } 
+        .we_do-white {
+            background-color: #ffffff;
+                .section-block  .section-text  {
+                    max-width: 400px;
+                    text-align: left;
+                        h3 {
+                            font-size: 28px;
+                            color: rgb(134, 134, 134);
+                            text-transform: uppercase;
+                            text-align: right;
+                            line-height: 40px; 
+                            border-right: 11px solid #fc645f; 
+                            padding-right: 12px;  
+                        }
+                        p {
+                            font-size: 15px;
+                            color: rgb(158, 152, 152);
+                            line-height: 1.599;
+                            text-align: right;
+                        }
+                        button {
+                            width: 167px;
+                            height: 44px;
+                            border-radius: 7px;
+                            background-color: rgb(252, 99, 94);
+                            font-size: 20px;
+                            font-weight: 200;
+                            font-family: "PF Encore Sans Pro";
+                            color: rgb(242, 242, 242);
+                            line-height: 1.299;
+                            text-align: center;
+                        }
+                    }
+                    img {
+                        width: 100%;
+                        height: auto;
+                    } 
+        }   
+    }
+    .portfolio {
+        menu {
+            list-style: none;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid  rgb(134, 134, 134);
+            border-bottom: 1px solid  rgb(134, 134, 134);
+            padding: 24px 0;
+            text-align: center;
+            align-self: center;
+            .controls {
+                display: flex;
+                justify-content: space-between;
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    color: rgb(134, 134, 134);
+                    font-size: 20px;
+                    font-family: "PF Encore Sans Pro";
+                    line-height: 1.299;
+                    button {
+                        font-size: 20px;
+                        font-family: "PF Encore Sans Pro";
+                        color: rgb(252, 99, 94);
+                        background: transparent;
+                        border: none;
+                        text-transform: uppercase;
+                        line-height: 1.299;
+                        text-align: center;
+                        font-weight: 300;
+                        text-decoration: none;
+                        cursor: pointer;
+                        // &:hover {
+                        //     color:#fc635e;
+                        //     border-bottom: #fc635e solid 3px;
+                        //     padding-bottom: 5px;
+                        // }
+                    }
                 }
             }
+
         }
+    }
+}
+
+ 
+    
