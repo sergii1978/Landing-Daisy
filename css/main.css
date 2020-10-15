@@ -358,9 +358,12 @@ body .we_do .we_do-white img {
   width: 100%;
   height: auto;
 }
-body .portfolio menu {
-  list-style: none;
-  text-transform: uppercase;
+body .portfolio {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body .portfolio .controls {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #868686;
@@ -369,19 +372,7 @@ body .portfolio menu {
   text-align: center;
   align-self: center;
 }
-body .portfolio menu .controls {
-  display: flex;
-  justify-content: space-between;
-}
-body .portfolio menu .controls li {
-  display: flex;
-  justify-content: space-between;
-  color: #868686;
-  font-size: 20px;
-  font-family: "PF Encore Sans Pro";
-  line-height: 1.299;
-}
-body .portfolio menu .controls li button {
+body .portfolio .controls button {
   font-size: 20px;
   font-family: "PF Encore Sans Pro";
   color: #fc635e;
@@ -392,5 +383,32 @@ body .portfolio menu .controls li button {
   text-align: center;
   font-weight: 300;
   text-decoration: none;
+  cursor: pointer;
+}
+body .portfolio .container-filter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+body .portfolio .container-filter div {
+  width: 200px;
+  height: 150px;
+  background: #868686;
+  border: 1px solid #000000;
+}
+body .portfolio button {
+  width: auto;
+  height: 44px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 7px;
+  background-color: #fc635e;
+  font-size: 20px;
+  font-weight: 200;
+  font-family: "PF Encore Sans Pro";
+  color: #f2f2f2;
+  line-height: 1.299;
+  text-align: center;
   cursor: pointer;
 }

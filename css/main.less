@@ -446,50 +446,62 @@ body {
                     } 
         }   
     }
+
     .portfolio {
-        menu {
-            list-style: none;
-            text-transform: uppercase;
-            display: flex;
-            justify-content: space-between;
-            border-top: 1px solid  rgb(134, 134, 134);
-            border-bottom: 1px solid  rgb(134, 134, 134);
-            padding: 24px 0;
-            text-align: center;
-            align-self: center;
-            .controls {
-                display: flex;
-                justify-content: space-between;
-                li {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+                .controls {
                     display: flex;
                     justify-content: space-between;
-                    color: rgb(134, 134, 134);
-                    font-size: 20px;
-                    font-family: "PF Encore Sans Pro";
-                    line-height: 1.299;
+                    border-top: 1px solid  rgb(134, 134, 134);
+                    border-bottom: 1px solid  rgb(134, 134, 134);
+                    padding: 24px 0;
+                    text-align: center;
+                    align-self: center;
                     button {
-                        font-size: 20px;
-                        font-family: "PF Encore Sans Pro";
-                        color: rgb(252, 99, 94);
-                        background: transparent;
-                        border: none;
-                        text-transform: uppercase;
-                        line-height: 1.299;
-                        text-align: center;
-                        font-weight: 300;
-                        text-decoration: none;
-                        cursor: pointer;
-                        // &:hover {
-                        //     color:#fc635e;
-                        //     border-bottom: #fc635e solid 3px;
-                        //     padding-bottom: 5px;
-                        // }
+                            font-size: 20px;
+                            font-family: "PF Encore Sans Pro";
+                            color: rgb(252, 99, 94);
+                            background: transparent;
+                            border: none;
+                            text-transform: uppercase;
+                            line-height: 1.299;
+                            text-align: center;
+                            font-weight: 300;
+                            text-decoration: none;
+                            cursor: pointer;
+                            }
+                }
+                .container-filter {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    div {
+                        width: 200px;
+                        height: 150px;
+                        background: #868686;
+                        border: 1px solid #000000;
                     }
                 }
-            }
-
-        }
+                button {
+                    width: auto;
+                    height: 44px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    border-radius: 7px;
+                    background-color: rgb(252, 99, 94);
+                    font-size: 20px;
+                    font-weight: 200;
+                    font-family: "PF Encore Sans Pro";
+                    color: rgb(242, 242, 242);
+                    line-height: 1.299;
+                    text-align: center;
+                    cursor: pointer;
+                }
     }
+
 }
 
  
