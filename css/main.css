@@ -359,13 +359,14 @@ body .we_do .we_do-white img {
   height: auto;
 }
 body .portfolio {
+  text-align: center;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 body .portfolio .controls {
-  display: flex;
-  justify-content: space-between;
+  display: inline-flex;
+  justify-content: space-around;
   border-top: 1px solid #868686;
   border-bottom: 1px solid #868686;
   padding: 24px 0;
