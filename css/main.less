@@ -29,11 +29,17 @@ body {
     }
 
     a.btn {
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        align-self: center;
+        width: 200px;
         color: #fc635e;
         text-decoration: none;
         font-size: 22px;
         border: 2px solid #fc635e;
-        padding: 12px 28px;
+        padding: 12px 0 12px 0;
+        margin: 0 auto;
         border-radius: 8px;
         &:hover {
             background: #fc635e;
@@ -262,6 +268,9 @@ body {
         background: white;
         padding: 70px 50px 10px 50px;
         color: #868686;
+        h2 {
+            margin-bottom: 20px;
+        }
      
 
         // .section_title {
@@ -354,12 +363,17 @@ body {
     /*--section our process--*/ 
     .process {
         text-align: center;
+        padding-top: 52px;
+        h2 {
+            margin-bottom: 20px;
+        }
         .steps {
             display: none;
         }
         img {
             width: 100%;
-            height: auto;   
+            height: auto;
+            margin-bottom: 30px;   
         }
     }
 
@@ -370,6 +384,9 @@ body {
         .we_do-grey {
             background-color: #f2f2f2;
             padding-top: 60px;
+                h2 {
+                    margin-bottom: 30px;
+                }
                 .section-block .section-text  {
                     max-width: 400px;
                     text-align: left;
@@ -405,9 +422,13 @@ body {
                             width: 100%;
                             height: auto;
                         } 
+                        a {
+                            margin-top: 50px;
+                        }
         } 
         .we_do-white {
             background-color: #ffffff;
+            padding-top: 110px;
                 .section-block  .section-text  {
                     max-width: 400px;
                     text-align: left;
@@ -457,9 +478,14 @@ body {
             h2 {
                 padding-bottom: 40px;
             }
-            .slider-wrapper {
+            .controls {
                 display: flex;
-                flex-direction: column;
+                min-width: 100%;
+                justify-content: space-between;
+                border-top: 1px solid  rgb(134, 134, 134);
+                border-bottom: 1px solid  rgb(134, 134, 134);
+                padding: 24px 0;
+                align-self: center;
                 font-size: 20px;
                 font-family: "PF Encore Sans Pro";
                 color: rgb(252, 99, 94);
@@ -467,60 +493,90 @@ body {
                 text-align: center;
                 font-weight: 300;
                 letter-spacing: 2px;
-                .controls {
-                    display: flex;
-                    justify-content: space-around;
-                    border-top: 1px solid  rgb(134, 134, 134);
-                    border-bottom: 1px solid  rgb(134, 134, 134);
-                    padding: 24px 0;
-                    align-self: center;
+                margin-bottom: 50px;
+                .control {
                     font-size: 20px;
                     font-family: "PF Encore Sans Pro";
                     color: rgb(252, 99, 94);
+                    background: transparent;
+                    border: none;
+                    text-transform: uppercase;
                     line-height: 1.299;
                     text-align: center;
                     font-weight: 300;
+                    &:hover {
+                        color: #750d0a;
+                        cursor: pointer;
+                    }
+                }
+                p {
+                    font-size: 20px;
+                    font-family: "PF Encore Sans Pro";
+                    color: rgb(252, 99, 94);
+                    line-height: 0.2;
+                    text-align: center;
+                    font-weight: 300;
                     letter-spacing: 2px;
-                    margin-bottom: 50px;
-                    button.control {
-                        font-size: 20px;
-                        font-family: "PF Encore Sans Pro";
-                        color: rgb(252, 99, 94);
-                        background: transparent;
-                        border: none;
-                        text-transform: uppercase;
-                        line-height: 1.299;
-                        text-align: center;
-                        font-weight: 300;
-                        &:hover {
-                            color: #750d0a;
-                            cursor: pointer;
-                        }
-                    }
-                    p {
-                        font-size: 20px;
-                        font-family: "PF Encore Sans Pro";
-                        color: rgb(252, 99, 94);
-                        line-height: 0.2;
-                        text-align: center;
-                        font-weight: 300;
-                        letter-spacing: 2px;
-                    }
+                }
+        }
+        .container-filter {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            #ex1 {
+                background-image: url(../img/1.png);
+                margin-bottom: 5px;
             }
-            .container-filter {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                div {
-                    width: 200px;
-                    height: 150px;
-                    background: #868686;
-                    border: 1px solid #000000;
+            #ex2 {
+                background-image: url(../img/2.png);
+                margin-bottom: 5px;
+            }
+            #ex3 {
+                background-image: url(../img/3.png);
+                margin-bottom: 5px;
+            }
+            #ex4 {
+                background-image: url(../img/4.png);
+                margin-bottom: 5px;
+            }
+            #ex5 {
+                background-image: url(../img/5.png);
+                margin-bottom: 5px;
+            }
+            #ex6 {
+                background-image: url(../img/6.png);
+                margin-bottom: 5px;
+            }
+            div {
+                background-size: cover;
+                background-position: center center;
+                width: 250px;
+                height: 180px;
+                .fill {
+                    p {
+                        margin: 0;
+                        padding: 10px;
+                    }
+                    display: none;
+                    position: relative;
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    margin: 0;
+                    background: url(../img/plus.png) rgba(255,72,72,0.75);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                &:hover .fill {
+                    cursor: pointer;
+                    display: block;
+                    transition: 0.5s;
                 }
             }
         }
-        button.btn-portfolio {
+        .btn-portfolio {
             width: auto;
             height: 44px;
             padding-left: 10px;
@@ -536,6 +592,22 @@ body {
             line-height: 1.299;
             text-align: center;
             cursor: pointer;
+        }
+    }
+
+    /*--team--*/
+    .team {
+        .social-link {
+            fill: #565656;
+            transition-duration: 500ms;
+            transition-property: fill;
+            &:hover{
+                fill:  #f84545;
+            }
+        }
+        .social-icon {
+            width: 37px;
+            height: 37px;
         }
     }
 }

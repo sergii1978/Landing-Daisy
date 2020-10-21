@@ -8,6 +8,7 @@ body {
   /*--section our process--*/
   /*--section we do--*/
   /*section portfolio*/
+  /*--team--*/
 }
 body div.cont {
   max-width: 960px;
@@ -34,11 +35,17 @@ body a.arrowDown:hover {
   color: white;
 }
 body a.btn {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+  width: 200px;
   color: #fc635e;
   text-decoration: none;
   font-size: 22px;
   border: 2px solid #fc635e;
-  padding: 12px 28px;
+  padding: 12px 0 12px 0;
+  margin: 0 auto;
   border-radius: 8px;
 }
 body a.btn:hover {
@@ -218,6 +225,9 @@ body .receive {
   padding: 70px 50px 10px 50px;
   color: #868686;
 }
+body .receive h2 {
+  margin-bottom: 20px;
+}
 body .receive a {
   font-size: 30px;
   text-decoration: none;
@@ -272,6 +282,10 @@ body .expand .arrowDown {
 }
 body .process {
   text-align: center;
+  padding-top: 52px;
+}
+body .process h2 {
+  margin-bottom: 20px;
 }
 body .process .steps {
   display: none;
@@ -279,6 +293,7 @@ body .process .steps {
 body .process img {
   width: 100%;
   height: auto;
+  margin-bottom: 30px;
 }
 body .we_do {
   text-align: center;
@@ -286,6 +301,9 @@ body .we_do {
 body .we_do .we_do-grey {
   background-color: #f2f2f2;
   padding-top: 60px;
+}
+body .we_do .we_do-grey h2 {
+  margin-bottom: 30px;
 }
 body .we_do .we_do-grey .section-block .section-text {
   max-width: 400px;
@@ -322,8 +340,12 @@ body .we_do .we_do-grey img {
   width: 100%;
   height: auto;
 }
+body .we_do .we_do-grey a {
+  margin-top: 50px;
+}
 body .we_do .we_do-white {
   background-color: #ffffff;
+  padding-top: 110px;
 }
 body .we_do .we_do-white .section-block .section-text {
   max-width: 400px;
@@ -371,20 +393,10 @@ body .portfolio {
 body .portfolio h2 {
   padding-bottom: 40px;
 }
-body .portfolio .slider-wrapper {
+body .portfolio .controls {
   display: flex;
-  flex-direction: column;
-  font-size: 20px;
-  font-family: "PF Encore Sans Pro";
-  color: #fc635e;
-  line-height: 1.299;
-  text-align: center;
-  font-weight: 300;
-  letter-spacing: 2px;
-}
-body .portfolio .slider-wrapper .controls {
-  display: flex;
-  justify-content: space-around;
+  min-width: 100%;
+  justify-content: space-between;
   border-top: 1px solid #868686;
   border-bottom: 1px solid #868686;
   padding: 24px 0;
@@ -398,7 +410,7 @@ body .portfolio .slider-wrapper .controls {
   letter-spacing: 2px;
   margin-bottom: 50px;
 }
-body .portfolio .slider-wrapper .controls button.control {
+body .portfolio .controls .control {
   font-size: 20px;
   font-family: "PF Encore Sans Pro";
   color: #fc635e;
@@ -409,11 +421,11 @@ body .portfolio .slider-wrapper .controls button.control {
   text-align: center;
   font-weight: 300;
 }
-body .portfolio .slider-wrapper .controls button.control:hover {
+body .portfolio .controls .control:hover {
   color: #750d0a;
   cursor: pointer;
 }
-body .portfolio .slider-wrapper .controls p {
+body .portfolio .controls p {
   font-size: 20px;
   font-family: "PF Encore Sans Pro";
   color: #fc635e;
@@ -422,19 +434,64 @@ body .portfolio .slider-wrapper .controls p {
   font-weight: 300;
   letter-spacing: 2px;
 }
-body .portfolio .slider-wrapper .container-filter {
+body .portfolio .container-filter {
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-body .portfolio .slider-wrapper .container-filter div {
-  width: 200px;
-  height: 150px;
-  background: #868686;
-  border: 1px solid #000000;
+body .portfolio .container-filter #ex1 {
+  background-image: url(../img/1.png);
+  margin-bottom: 5px;
 }
-body .portfolio button.btn-portfolio {
+body .portfolio .container-filter #ex2 {
+  background-image: url(../img/2.png);
+  margin-bottom: 5px;
+}
+body .portfolio .container-filter #ex3 {
+  background-image: url(../img/3.png);
+  margin-bottom: 5px;
+}
+body .portfolio .container-filter #ex4 {
+  background-image: url(../img/4.png);
+  margin-bottom: 5px;
+}
+body .portfolio .container-filter #ex5 {
+  background-image: url(../img/5.png);
+  margin-bottom: 5px;
+}
+body .portfolio .container-filter #ex6 {
+  background-image: url(../img/6.png);
+  margin-bottom: 5px;
+}
+body .portfolio .container-filter div {
+  background-size: cover;
+  background-position: center center;
+  width: 250px;
+  height: 180px;
+}
+body .portfolio .container-filter div .fill {
+  display: none;
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  background: url(../img/plus.png) rgba(255, 72, 72, 0.75);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body .portfolio .container-filter div .fill p {
+  margin: 0;
+  padding: 10px;
+}
+body .portfolio .container-filter div:hover .fill {
+  cursor: pointer;
+  display: block;
+  transition: 0.5s;
+}
+body .portfolio .btn-portfolio {
   width: auto;
   height: 44px;
   padding-left: 10px;
@@ -450,4 +507,16 @@ body .portfolio button.btn-portfolio {
   line-height: 1.299;
   text-align: center;
   cursor: pointer;
+}
+body .team .social-link {
+  fill: #565656;
+  transition-duration: 500ms;
+  transition-property: fill;
+}
+body .team .social-link:hover {
+  fill: #f84545;
+}
+body .team .social-icon {
+  width: 37px;
+  height: 37px;
 }
