@@ -2,7 +2,7 @@ body {
     margin: 0 auto;
     max-width: 1260px;
     font-family: "Helvetica", "Tahoma", "PF Encore Sans Pro", sans-serif;
-    div.cont {
+    .cont {
         max-width: 960px;
         margin: 0 auto;
         padding-bottom: 25px;
@@ -597,17 +597,65 @@ body {
 
     /*--team--*/
     .team {
-        .social-link {
-            fill: #565656;
-            transition-duration: 500ms;
-            transition-property: fill;
-            &:hover{
-                fill:  #f84545;
+        padding-top: 50px;
+        padding-bottom: 10px;
+        background: #f2f2f2;
+        .section-title {
+            margin-bottom: 75px;
+        }
+        .team-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+              
+        }
+        .team-member {
+            text-align: center;
+            max-width: 300px;
+            margin: 0 auto;
+            .member-title {
+                font-size: 28px;
+                font-family: "PF Encore Sans Pro";
+                color: rgb(252, 99, 94);
+                line-height: 0.928;
+                margin: 25px 0 20px 0;
+                span {
+                    color: #565656;
+                }
+            }
+
+            .member-position {
+                font-size: 20px;
+                font-family: "PF Encore Sans Pro";
+                color: #565656;
+                line-height: 1.7;
+                margin: 0 auto;
+                padding-bottom: 20px;
+            }
+
+            .member-social {
+                display: flex;
+                justify-content: space-between;
+                max-width: 150px;
+                margin: 0 auto;
+                text-align: center;
+                .social-link {
+                    fill: #565656;
+                    transition-duration: 500ms;
+                    transition-property: fill;
+                    &:hover{
+                        fill:  #f84545;
+                    }
+                }
+                .social-icon {
+                    width: 37px;
+                    height: 37px;
+                }
             }
         }
-        .social-icon {
-            width: 37px;
-            height: 37px;
+        .arrowDown {
+            margin-top: 75px;
         }
     }
 }
+
+  
