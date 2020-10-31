@@ -102,6 +102,16 @@ body .section-block {
   display: flex;
   justify-content: space-between;
 }
+body .member-title {
+  font-size: 28px;
+  font-family: "PF Encore Sans Pro";
+  color: #fc635e;
+  line-height: 0.928;
+  margin: 25px 0 20px 0;
+}
+body .member-title span {
+  color: #565656;
+}
 body header {
   background: url('../img/background.png') no-repeat;
   background-size: cover;
@@ -525,16 +535,6 @@ body .team .team-member {
   max-width: 300px;
   margin: 0 auto;
 }
-body .team .team-member .member-title {
-  font-size: 28px;
-  font-family: "PF Encore Sans Pro";
-  color: #fc635e;
-  line-height: 0.928;
-  margin: 25px 0 20px 0;
-}
-body .team .team-member .member-title span {
-  color: #565656;
-}
 body .team .team-member .member-position {
   font-size: 20px;
   font-family: "PF Encore Sans Pro";
@@ -564,4 +564,11 @@ body .team .team-member .member-social .social-icon {
 }
 body .team .arrowDown {
   margin-top: 75px;
+}
+body .single-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+body .single-item img {
+  margin: 0 auto;
 }

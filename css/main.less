@@ -120,6 +120,17 @@ body {
         justify-content: space-between;
     }
 
+    .member-title {
+        font-size: 28px;
+        font-family: "PF Encore Sans Pro";
+        color: rgb(252, 99, 94);
+        line-height: 0.928;
+        margin: 25px 0 20px 0;
+        span {
+            color: #565656;
+        }
+    }
+
     /*--header--*/
     header {
         background: url('../img/background.png') no-repeat;
@@ -605,23 +616,12 @@ body {
         }
         .team-wrapper {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-              
+            grid-template-columns: 1fr 1fr 1fr;     
         }
         .team-member {
             text-align: center;
             max-width: 300px;
             margin: 0 auto;
-            .member-title {
-                font-size: 28px;
-                font-family: "PF Encore Sans Pro";
-                color: rgb(252, 99, 94);
-                line-height: 0.928;
-                margin: 25px 0 20px 0;
-                span {
-                    color: #565656;
-                }
-            }
 
             .member-position {
                 font-size: 20px;
@@ -656,6 +656,29 @@ body {
             margin-top: 75px;
         }
     }
+
+    // testimonials
+        .single-item {
+                // display: flex;
+                // flex-direction: row;
+                // justify-content: space-between;
+                // img {
+                //     max-width: 33%;
+                // }
+                // p {
+                //     max-width: 33%;
+                // }
+                // .title-cont {
+                //     max-width: 33%;
+                // }
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                img {
+                    margin: 0 auto;
+                }  
+
+        }
+
 }
 
   
