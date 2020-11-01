@@ -659,15 +659,14 @@ body {
 
     // testimonials
         .testimonials-cont {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                .test-wrap {
-                    max-width: 40%;
+            display: grid;
+            grid-template-columns: 2fr 1fr 2fr;  
+            .test-wrap__img {
+                img {
+                    width: 160px;
+                    margin: 0 auto;
                 }
-                .test-wrap_img {
-                    max-width: 20%;
-                }
+            }
         }
 
 }

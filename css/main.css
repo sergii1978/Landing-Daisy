@@ -566,13 +566,10 @@ body .team .arrowDown {
   margin-top: 75px;
 }
 body .testimonials-cont {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
 }
-body .testimonials-cont .test-wrap {
-  max-width: 40%;
-}
-body .testimonials-cont .test-wrap_img {
-  max-width: 20%;
+body .testimonials-cont .test-wrap__img img {
+  width: 160px;
+  margin: 0 auto;
 }
