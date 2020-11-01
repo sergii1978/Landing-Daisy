@@ -565,10 +565,14 @@ body .team .team-member .member-social .social-icon {
 body .team .arrowDown {
   margin-top: 75px;
 }
-body .single-item {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+body .testimonials-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-body .single-item img {
-  margin: 0 auto;
+body .testimonials-cont .test-wrap {
+  max-width: 40%;
+}
+body .testimonials-cont .test-wrap_img {
+  max-width: 20%;
 }
