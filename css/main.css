@@ -565,11 +565,11 @@ body .team .team-member .member-social .social-icon {
 body .team .arrowDown {
   margin-top: 75px;
 }
-body .testimonials-cont {
+body .testimonials .testimonials-cont {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
 }
-body .testimonials-cont .test-wrap__img img {
+body .testimonials .testimonials-cont .test-wrap__img img {
   width: 160px;
   margin: 0 auto;
 }
