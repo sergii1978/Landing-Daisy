@@ -567,4 +567,56 @@ body .team .arrowDown {
 }
 body .testimonials {
   padding-top: 52px;
+  padding-bottom: 165px;
+}
+body .testimonials .quotes {
+  height: 78px;
+  margin-bottom: 74px;
+}
+body .testimonials .swiper-wrapper {
+  margin-bottom: 52px;
+}
+body .testimonials .swiper-wrapper .item {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+}
+body .testimonials .swiper-wrapper .item .test-wrap__img {
+  display: flex;
+  justify-content: center;
+}
+body .testimonials .swiper-wrapper .item .test-wrap__img img {
+  width: 160px;
+  margin: 0 auto;
+}
+body .testimonials .slider__controls {
+  padding-top: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 200px;
+}
+body .testimonials .slider__controls .swiper-button-prev,
+body .testimonials .slider__controls .swiper-button-next {
+  margin: 0 auto;
+}
+body .testimonials .slider__controls .swiper-button-prev .slider__nav,
+body .testimonials .slider__controls .swiper-button-next .slider__nav {
+  fill: #fc635e;
+  /* transition-duration: 500ms; */
+  transition-property: fill;
+  margin: 20px;
+}
+body .testimonials .slider__controls .swiper-button-prev .slider__nav:hover,
+body .testimonials .slider__controls .swiper-button-next .slider__nav:hover {
+  fill: #885efc;
+  transform: scale(1.1);
+  transition: 200ms;
+}
+body .testimonials .slider__controls .swiper-button-prev .slider__nav .arrow-icon,
+body .testimonials .slider__controls .swiper-button-next .slider__nav .arrow-icon {
+  width: 31px;
+  height: 31px;
 }
