@@ -567,7 +567,6 @@ body .team .arrowDown {
 }
 body .testimonials {
   padding-top: 52px;
-  padding-bottom: 165px;
 }
 body .testimonials .quotes {
   height: 78px;
@@ -619,4 +618,53 @@ body .testimonials .slider__controls .swiper-button-prev .slider__nav .arrow-ico
 body .testimonials .slider__controls .swiper-button-next .slider__nav .arrow-icon {
   width: 31px;
   height: 31px;
+}
+body .map .hex-adress {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  z-index: 10;
+}
+body .map .hex-adress svg {
+  width: 290px;
+  height: 242px;
+}
+body .map .map-show {
+  position: relative;
+  bottom: 122px;
+  z-index: 9;
+  margin-bottom: -124px;
+}
+body footer {
+  width: 100%;
+  height: 250px;
+  background-image: url('../img/footer-bg.png');
+  background-color: #232323;
+  background-size: cover;
+  opacity: 0.74;
+  text-align: center;
+  padding-top: 122px;
+}
+body footer .logo-footer {
+  display: flex;
+  justify-content: center;
+  line-height: 90px;
+  margin: 0 auto;
+}
+body footer .logo-footer .logo-footer__img {
+  height: 90px;
+  width: 78px;
+}
+body footer .logo-footer .logo-footer__text {
+  color: #ffffff;
+  font-family: "Gotham Pro";
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 90px;
+  text-align: center;
+  margin-left: 22px;
+  z-index: 12;
 }
