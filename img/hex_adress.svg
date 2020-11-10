@@ -1,11 +1,96 @@
-<svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="209px" height="242px">
-<path fill-rule="evenodd"  fill="rgb(254, 134, 130)"
- d="M-0.015,60.504 L104.489,0.008 L208.994,60.504 L208.994,181.493 L104.489,241.990 L-0.015,181.493 L-0.015,60.504 Z"/>
-<path fill-rule="evenodd"  fill="rgb(252, 99, 94)"
- d="M10.436,66.762 L104.489,12.523 L198.543,66.762 L198.543,175.235 L104.489,229.473 L10.436,175.235 L10.436,66.762 Z"/>
-<text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 0.99880504807841, 0, 0, 0.9978722928524,71.5447306943033, 94.9552358624624)" font-size="27px"><tspan font-size="27px" font-family="PF Encore Sans Pro" fill="#FFFFFF">Daisy</tspan></text>
-<text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 0.99880504807841, 0, 0, 0.9978722928524,27.2561095461575, 122.558124211952)" font-size="15px"><tspan font-size="15px" font-family="PF Encore Sans Pro" fill="#FFFFFF">&#54;&#49;&#53;&#32;&#52;th&#32;Ave&#32;S&#44;&#32;Jacksonville&#32;Beach&#44;&#32;FL&#32;&#51;&#50;&#50;&#53;&#48;</tspan></text>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="209px"
+   height="242px"
+   version="1.1"
+   id="svg42"
+   sodipodi:docname="hex_adress.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata48">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs46" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview44"
+     showgrid="false"
+     inkscape:zoom="3.5123967"
+     inkscape:cx="104.5"
+     inkscape:cy="121"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg42" />
+  <path
+     fill-rule="evenodd"
+     fill="rgb(254, 134, 130)"
+     d="M-0.015,60.504 L104.489,0.008 L208.994,60.504 L208.994,181.493 L104.489,241.990 L-0.015,181.493 L-0.015,60.504 Z"
+     id="path30" />
+  <path
+     fill-rule="evenodd"
+     fill="rgb(252, 99, 94)"
+     d="M10.436,66.762 L104.489,12.523 L198.543,66.762 L198.543,175.235 L104.489,229.473 L10.436,175.235 L10.436,66.762 Z"
+     id="path32"
+     style="fill:#ff5555" />
+  <text
+     kerning="auto"
+     font-family="Myriad Pro"
+     fill="rgb(0, 0, 0)"
+     transform="matrix( 0.99880504807841, 0, 0, 0.9978722928524,71.5447306943033, 94.9552358624624)"
+     font-size="27px"
+     id="text36"><tspan
+       font-size="27px"
+       font-family="PF Encore Sans Pro"
+       fill="#FFFFFF"
+       id="tspan34">Daisy</tspan></text>
+  <text
+     kerning="auto"
+     font-family="'Myriad Pro'"
+     fill="#000000"
+     transform="scale(1.0004673,0.99953295)"
+     font-size="11.9801px"
+     id="text40"
+     x="105.2812"
+     y="127.17281"
+     style="font-size:18.6667px;stroke-width:0.998339"><tspan
+       sodipodi:role="line"
+       id="tspan62"
+       x="105.2812"
+       y="127.17281"
+       style="font-size:18.6667px;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.99668">615 4th Ave S,</tspan><tspan
+       sodipodi:role="line"
+       id="tspan64"
+       x="105.2812"
+       y="150.50615"
+       style="font-size:18.6667px;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.99668">Jacksonville Beach,</tspan><tspan
+       sodipodi:role="line"
+       x="105.2812"
+       y="173.83948"
+       id="tspan68"
+       style="font-size:18.6667px;text-align:center;text-anchor:middle;fill:#ffffff;stroke-width:0.99668">FL 32250</tspan></text>
 </svg>

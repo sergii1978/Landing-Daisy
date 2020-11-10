@@ -53,10 +53,12 @@ body a.btn:hover {
   color: white;
 }
 body .section-promo {
+  font-family: "Myriad Pro";
   text-transform: uppercase;
-  font-size: 50px;
-  font-weight: normal;
-  line-height: 50px;
+  font-size: 51px;
+  font-weight: 900;
+  line-height: 51px;
+  letter-spacing: 5px;
   color: white;
 }
 body .section-promo span {
@@ -210,14 +212,14 @@ body header .mainText {
 body header .mainText .section-promo {
   margin: 0 auto;
   margin-bottom: 28px;
-  font-family: "Myriad Pro";
-  font-weight: normal;
 }
 body header .mainText p {
   margin: 0 auto;
   font-family: "Myriad Pro";
   font-size: 22px;
+  font-weight: 300;
   color: white;
+  letter-spacing: 1px;
 }
 body header .btn {
   margin: 0 auto;
@@ -580,14 +582,44 @@ body .testimonials .swiper-wrapper .item {
   height: 100%;
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
+  align-items: center;
+}
+body .testimonials .swiper-wrapper .item .test-wrap {
+  width: 320px;
+  height: 56px;
+  text-align: justify;
+  justify-self: right;
+}
+body .testimonials .swiper-wrapper .item .test-wrap p {
+  margin: 0 auto;
+  color: #767676;
+  font-family: "PF Encore Sans Pro";
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 21px;
 }
 body .testimonials .swiper-wrapper .item .test-wrap__img {
   display: flex;
   justify-content: center;
+  margin-left: 55px;
+  margin-right: 55px;
 }
 body .testimonials .swiper-wrapper .item .test-wrap__img img {
   width: 160px;
   margin: 0 auto;
+}
+body .testimonials .swiper-wrapper .item .test-wrap__title {
+  text-align: left;
+}
+body .testimonials .swiper-wrapper .item .test-wrap__title p {
+  font-family: "PF Encore Sans Pro Light";
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+  color: #929292;
 }
 body .testimonials .slider__controls {
   padding-top: 1rem;

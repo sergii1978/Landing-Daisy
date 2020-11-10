@@ -48,30 +48,17 @@ body {
     }
 
     .section-promo {
-        font-weight: normal;
+        font-family: "Myriad Pro";
         text-transform: uppercase;
-        font-size: 50px;
-        font-weight: normal;
-        line-height: 50px;
+        font-size: 51px;
+        font-weight: 900;
+        line-height: 51px;
+        letter-spacing: 5px;
         color: white;
         span {
             color: #fc635e; 
         }
     }
-
-    // .section-title {
-    //     display: inline-block;
-    //     font-size: 40px;
-    //     text-transform: uppercase;
-    //     color: #868686;
-    //     // text-decoration: solid 2px #ADADAD underline;
-    //     // text-underline-position: below 10px;
-    //     padding-bottom: 14px;
-    //     border-bottom: solid 2px #ADADAD;
-    //     span {
-    //       color: #fc635e;
-    //     }
-    // }
 
     .section-title {
         display: inline-block;
@@ -143,19 +130,6 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            // >a {
-            //     color: white;
-            //     font-size: 25px;
-            //     font-weight: bold;
-            //     text-decoration: none;
-            //     img {
-            //         padding-right: 15px;
-            //         vertical-align: middle;
-            //     }
-            // }
-            // .logo:hover img {
-            //     opacity: 0.7;
-            // }
             .logo {
                 display: flex;
                 justify-content: flex-start;
@@ -251,14 +225,14 @@ body {
             .section-promo {
                 margin: 0 auto;
                 margin-bottom: 28px;
-                font-family: "Myriad Pro";
-                font-weight: normal;
             }
             p {
                 margin: 0 auto;
                 font-family: "Myriad Pro";
                 font-size: 22px;
+                font-weight: 300;
                 color: white;
+                letter-spacing: 1px;
             }
         } 
         .btn {
@@ -282,35 +256,6 @@ body {
         h2 {
             margin-bottom: 20px;
         }
-     
-
-        // .section_title {
-        //     display: block;
-        //     position: relative;
-        //     margin: 0 auto;
-        //     font-size: 40px;
-        //     text-transform: uppercase;
-        //     span {
-        //       color: #fc635e;
-        //     }
-        //     &:after {
-        //         display: block;
-        //         background-color: #ADADAD;
-        //         content: " ";
-        //         height: 2px;
-        //         width: 0%;
-        //         left: 50%;
-        //         position:absolute;
-        //         transition: width .3s ease-in-out;
-        //         transform:translateX(-50%);
-        //     }
-
-        //     .section_title:hover:after,
-        //     .section_title:focus:after {
-        //         width: 100%;
-        //     }
-        // }
-        
 
         a {
             font-size: 30px;
@@ -672,13 +617,44 @@ body {
                 height: 100%;
                 display: grid;
                 grid-template-columns: 2fr 1fr 2fr;
+
+                align-items: center;
+                .test-wrap {
+                    width: 320px;
+                    height: 56px;
+                    text-align: justify;
+                    justify-self: right;
+                    p {
+                        margin: 0 auto;
+                        color: #767676;
+                        font-family: "PF Encore Sans Pro";
+                        font-size: 15px;
+                        font-weight: 300;
+                        font-style: normal;
+                        letter-spacing: normal;
+                        line-height: 21px;
+                    }
+                }
                 .test-wrap__img {
                     display: flex;
                     justify-content: center;
+                    margin-left: 55px;
+                    margin-right: 55px;
                     img {
                         width: 160px;
                         margin: 0 auto;
                       }
+                }
+                .test-wrap__title {
+                    text-align: left;
+                    p {
+                        font-family: "PF Encore Sans Pro Light";
+                        font-size: 20px;
+                        font-weight: 300;
+                        font-style: normal;
+                        line-height: normal;
+                        color: #929292;
+                    }
                 }
             }
         }
