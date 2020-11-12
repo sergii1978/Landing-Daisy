@@ -258,13 +258,22 @@ body .receive a:hover {
 body .receive .icons {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 10px;
 }
 body .receive .icons .icons-cont {
   max-width: 200px;
 }
-body .receive .icons .icons-cont h3 {
-  text-decoration: underline;
+body .receive .icons .icons-cont .icon-title {
+  display: inline-flex;
+  justify-content: center;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #868686;
+  margin-top: 28px;
+  margin-bottom: 13px;
+}
+body .receive .icons .icons-cont .icon-title h3 {
   text-transform: uppercase;
+  margin: 0 auto;
 }
 body .receive .icons .icons-cont p {
   font-size: 15px;
@@ -407,12 +416,13 @@ body .portfolio h2 {
 }
 body .portfolio .controls {
   display: flex;
-  min-width: 100%;
-  justify-content: space-between;
-  border-top: 1px solid #868686;
-  border-bottom: 1px solid #868686;
-  padding: 24px 0;
+  flex-wrap: wrap;
+  justify-content: center;
   align-self: center;
+  align-items: center;
+  border-top: 2px solid #868686;
+  border-bottom: 2px solid #868686;
+  padding: 24px 0;
   font-size: 20px;
   font-family: "PF Encore Sans Pro";
   color: #fc635e;
@@ -436,15 +446,6 @@ body .portfolio .controls .control {
 body .portfolio .controls .control:hover {
   color: #750d0a;
   cursor: pointer;
-}
-body .portfolio .controls p {
-  font-size: 20px;
-  font-family: "PF Encore Sans Pro";
-  color: #fc635e;
-  line-height: 0.2;
-  text-align: center;
-  font-weight: 300;
-  letter-spacing: 2px;
 }
 body .portfolio .container-filter {
   width: 100%;

@@ -46,14 +46,11 @@
 					<a href="#" class="logo-link">Daisy</a>
 				</div>
 	
-				<!-- <a href="#" class="logo"><img src="img/logo.png" alt="Daisy">
-					Daisy
-				</a> -->
 				<menu>
-					<li><a href="">About</a></li>
-					<li><a href="">Portfolio</a></li>
-					<li><a href="">Services</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a href="#weDo">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#adress">Contact</a></li>
 				</menu>
 			</nav>
 			<div class="mainText">
@@ -74,28 +71,36 @@
 					<svg class="icon">
 						<use xlink:href="img/icons/sprite.svg#icon1"></use>
 					</svg>
-					<h3>Clients</h3>
+					<div class="icon-title">
+						<h3>Clients</h3>
+					</div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis excepturi obcaecati magnam deleniti aliquid mollitia!</p>
 				</div>
 				<div class="icons-cont">
 					<svg class="icon">
 						<use xlink:href="img/icons/sprite.svg#icon2"></use>
 					</svg>
-					<h3>Branding</h3>
+					<div class="icon-title">
+						<h3>Branding</h3>
+					</div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore harum sit eum minima voluptatem sunt!</p>
 				</div>
 				<div class="icons-cont">
 					<svg class="icon">
 						<use xlink:href="img/icons/sprite.svg#icon3"></use>
 					</svg>
-					<h3>Marketing</h3>
+					<div class="icon-title">
+						<h3>Marketing</h3>
+					</div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores alias cumque dicta optio natus laudantium.</p>
 				</div>
 				<div class="icons-cont">
 					<svg class="icon">
 						<use xlink:href="img/icons/sprite.svg#icon4"></use>
-					</svg>
-					<h3>ADV.</h3>
+					</svg><br>
+					<div class="icon-title">
+						<h3>adv.</h3>
+					</div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum sed aliquam voluptates perferendis aperiam provident.</p>
 				</div>
 			</div>
@@ -129,7 +134,7 @@
 	<section class="we_do">
 		<div class="we_do-grey">
 			<div class="cont">
-				<h2 class="section-title">what do <span> we do</span></h2>
+				<h2 class="section-title" id="weDo">what do <span> we do</span></h2>
 				<div class="section-block">
 					<div class="section-text">
 						<h3>Landing Pages</h3>
@@ -173,16 +178,12 @@
 
 	<section class="portfolio">
 		<div class="cont">
-			<h2 class="section-title">portfolio</h2>
+			<h2 class="section-title" id="portfolio">portfolio</h2>
 				<div class="controls">
-					<button class="control" type="button" data-filter="all">all</button>
-					<p>/</p>
-					<button class="control" type="button" data-filter=".category-et">entertainment</button>
-					<p>/</p>
-					<button class="control" type="button" data-filter=".category-st">sport</button>
-					<p>/</p>
-					<button class="control" type="button" data-filter=".category-bs">business</button>
-					<p>/</p>
+					<button class="control" type="button" data-filter="all">all</button> /
+					<button class="control" type="button" data-filter=".category-et">entertainment</button> /
+					<button class="control" type="button" data-filter=".category-st">sport</button> /
+					<button class="control" type="button" data-filter=".category-bs">business</button> /
 					<button class="control" type="button" data-filter=".category-bg">building</button>
 				</div>
 				<div class="container-filter">
@@ -214,7 +215,7 @@
 		<div class="cont">
 			<h2 class="section-title">our <span> team</span></h2>
 			<div class="team-wrapper">
-				<div class="team-member">
+				<div class="team-member" id="services">
 					<img src="img/Tomothy.png" alt="Thomothy">			
 					<h4 class="member-title">Tomothy <span> Bowman</span></h4>
 					<p class="member-position">Marketing</p>
@@ -361,7 +362,7 @@
 	<section class="map">
 		<div class="container">
 			<div class="map-wrap">
-				<div class="hex-adress">
+				<div class="hex-adress" id="adress">
 					<svg>
 						<use xlink:href="img/sprite_hex.svg#hex_adress"></use>
 					</svg>

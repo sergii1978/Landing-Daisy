@@ -276,13 +276,21 @@ body {
         .icons {
             display: flex;
             justify-content: space-between;
+            padding-bottom: 10px;
             .icons-cont{
                 max-width: 200px;
-                h3 {
-                    text-decoration: underline;
-                    text-transform: uppercase;
+                .icon-title {
+                    display: inline-flex;
+                    justify-content: center;
+                    padding-bottom: 3px;
+                    border-bottom: 3px solid #868686;
+                    margin-top: 28px;
+                    margin-bottom: 13px;
+                    h3 {
+                        text-transform: uppercase;
+                        margin: 0 auto;
+                    }
                 }
-
                 p {
                     font-size: 15px;
                 }
@@ -436,12 +444,14 @@ body {
             }
             .controls {
                 display: flex;
-                min-width: 100%;
-                justify-content: space-between;
-                border-top: 1px solid  rgb(134, 134, 134);
-                border-bottom: 1px solid  rgb(134, 134, 134);
-                padding: 24px 0;
+                flex-wrap: wrap;
+                // min-width: 100%;
+                justify-content: center;
                 align-self: center;
+                align-items: center;
+                border-top: 2px solid  rgb(134, 134, 134);
+                border-bottom: 2px solid  rgb(134, 134, 134);
+                padding: 24px 0;
                 font-size: 20px;
                 font-family: "PF Encore Sans Pro";
                 color: rgb(252, 99, 94);
@@ -464,15 +474,6 @@ body {
                         color: #750d0a;
                         cursor: pointer;
                     }
-                }
-                p {
-                    font-size: 20px;
-                    font-family: "PF Encore Sans Pro";
-                    color: rgb(252, 99, 94);
-                    line-height: 0.2;
-                    text-align: center;
-                    font-weight: 300;
-                    letter-spacing: 2px;
                 }
         }
         .container-filter {
