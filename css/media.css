@@ -3,7 +3,16 @@
 }
 
 @media screen and (max-width: 1399.98px) and (min-width: 1200px) {
-    /* .receive {
+
+}
+
+@media screen and (max-width: 1199.98px) and (min-width: 992px) {
+
+}
+
+
+@media screen and (max-width: 991.98px) and (min-width: 768px) {
+    .receive {
         padding: 30px 20px;
     }
     .receive h2 {
@@ -20,15 +29,6 @@
     .icons div p {
         margin-bottom: 20px;
     }
-} */
-
-@media screen and (max-width: 1199.98px) and (min-width: 992px) {
-
-}
-
-
-@media screen and (max-width: 991.98px) and (min-width: 768px) {
-
 }
 
 

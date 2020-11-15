@@ -257,7 +257,8 @@ body .receive a:hover {
 }
 body .receive .icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   padding-bottom: 10px;
 }
 body .receive .icons .icons-cont {
