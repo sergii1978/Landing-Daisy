@@ -127,13 +127,19 @@ body header nav {
   justify-content: space-between;
   align-items: center;
 }
-body header nav .logo {
+body header nav .menu-wrap {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+body header nav .menu-wrap .logo {
+  display: flex;
+  justify-content: center;
   align-content: center;
   align-self: center;
 }
-body header nav .hexagon {
+body header nav .menu-wrap .hexagon {
   display: flex;
   position: relative;
   width: 70px;
@@ -141,7 +147,7 @@ body header nav .hexagon {
   background-color: #fc645f;
   margin: 20.21px 0;
 }
-body header nav .hexagon p {
+body header nav .menu-wrap .hexagon p {
   margin: 0 auto;
   font-size: 35px;
   font-family: "PF Encore Sans Pro";
@@ -150,24 +156,24 @@ body header nav .hexagon p {
   text-transform: uppercase;
   text-align: center;
 }
-body header nav .hexagon:before,
-body header nav .hexagon:after {
+body header nav .menu-wrap .hexagon:before,
+body header nav .menu-wrap .hexagon:after {
   content: "";
   position: absolute;
   width: 0;
   border-left: 35px solid transparent;
   border-right: 35px solid transparent;
 }
-body header nav .hexagon:before {
+body header nav .menu-wrap .hexagon:before {
   bottom: 100%;
   border-bottom: 20.21px solid #fc645f;
 }
-body header nav .hexagon:after {
+body header nav .menu-wrap .hexagon:after {
   top: 100%;
   width: 0;
   border-top: 20.21px solid #fc645f;
 }
-body header nav > .logo .logo-link {
+body header nav .menu-wrap > .logo .logo-link {
   display: flex;
   align-content: center;
   align-self: center;
@@ -179,8 +185,17 @@ body header nav > .logo .logo-link {
   letter-spacing: 2px;
   padding-left: 20px;
 }
-body header nav .logo:hover {
+body header nav .menu-wrap .logo:hover {
   opacity: 0.7;
+}
+body header nav .menu-wrap .menu-link {
+  width: 50px;
+  height: 50px;
+}
+body header nav .menu-wrap .menu-link .menu-icon {
+  width: 50px;
+  height: 50px;
+  fill: #ffffff;
 }
 body header nav menu {
   list-style: none;

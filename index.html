@@ -34,20 +34,24 @@
 	<header>
 		<div class="cont">
 			<nav>
-				<div class="logo">
-					<div class="hexagon">
-						<p>D</p>
+				<div class="menu-wrap">
+					<div class="logo">
+						<div class="hexagon">
+							<p>D</p>
+						</div>
+						<a href="#" class="logo-link">Daisy</a>
 					</div>
-					<a href="#" class="logo-link">Daisy</a>
+					<div class="menu-bar">
+						<a href="#" class="menu-link">
+							<svg class="menu-icon">
+								<use xlink:href="/svg/sprite-menu.svg#bars"></use>
+							</svg>
+						</a>
+					</div>
 				</div>
 
-				<a href="#" class="menu-link">
-					<svg class="menu-icon">
-						<use xlink:href="/img/sprite-menu.svg#bars"></use>
-					</svg>
-				</a>
 				<div class="nav-hide">
-					<menu class="nav-hide">
+					<menu>
 						<li><a href="#weDo">About</a></li>
 						<li><a href="#portfolio">Portfolio</a></li>
 						<li><a href="#services">Services</a></li>
@@ -71,7 +75,7 @@
 			<div class="icons">
 				<div class="icons-cont">
 					<svg class="icon">
-						<use xlink:href="img/icons/sprite.svg#icon1"></use>
+						<use xlink:href="svg/sprite_icons.svg#icon1"></use>
 					</svg>
 					<div class="icon-title">
 						<h3>Clients</h3>
@@ -80,7 +84,7 @@
 				</div>
 				<div class="icons-cont">
 					<svg class="icon">
-						<use xlink:href="img/icons/sprite.svg#icon2"></use>
+						<use xlink:href="svg/sprite_icons.svg#icon2"></use>
 					</svg>
 					<div class="icon-title">
 						<h3>Branding</h3>
@@ -89,7 +93,7 @@
 				</div>
 				<div class="icons-cont">
 					<svg class="icon">
-						<use xlink:href="img/icons/sprite.svg#icon3"></use>
+						<use xlink:href="svg/sprite_icons.svg#icon3"></use>
 					</svg>
 					<div class="icon-title">
 						<h3>Marketing</h3>
@@ -98,7 +102,7 @@
 				</div>
 				<div class="icons-cont">
 					<svg class="icon">
-						<use xlink:href="img/icons/sprite.svg#icon4"></use>
+						<use xlink:href="svg/sprite_icons.svg#icon4"></use>
 					</svg><br>
 					<div class="icon-title">
 						<h3>adv.</h3>
@@ -123,12 +127,6 @@
 			<h2 class="section-title">Our <span> process</span></h2>
 			<p class="section-describe">Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum</p>
 			<img src="./img/our_process.png" alt="process">	
-			<div class="steps">
-				<div class="hex"></div>
-				<div class="hex"></div>
-				<div class="hex"></div>
-				<div class="hex"></div>
-			</div>
 			<a href="#" class="arrowDown">&darr;</a>	
 		</div>
 	</section>
@@ -224,17 +222,17 @@
 					<div class="member-social"> 
 						<a aria-label="Facebook" class="social-link" href="#">
 							<svg class="social-icon">
-								<use xLink:href="img/social.svg#facebook"></use>
+								<use xLink:href="svg/sprite_social.svg#facebook"></use>
 							</svg>
 						</a>
 						<a aria-label="Twitter" class="social-link" href="#">
 							<svg class="social-icon">
-								<use xLink:href="img/social.svg#twitter"></use>
+								<use xLink:href="svg/sprite_social.svg#twitter"></use>
 							</svg>
 						</a>
 						<a aria-label="Linkedin" class="social-link" href="#">
 							<svg class="social-icon">
-								<use xLink:href="img/social.svg#linkedin"></use>
+								<use xLink:href="svg/sprite_social.svg#linkedin"></use>
 							</svg>
 						</a>
 					</div>
@@ -246,17 +244,17 @@
 					<div class="member-social"> 
 						<a aria-label="Facebook" class="social-link" href="#">
 							<svg class="social-icon">
-								<use xLink:href="img/social.svg#facebook"></use>
+								<use xLink:href="svg/sprite_social.svg#facebook"></use>
 							</svg>
 						</a>
 						<a aria-label="Twitter" class="social-link" href="#">
 							<svg class="social-icon">
-								<use xLink:href="img/social.svg#twitter"></use>
+								<use xLink:href="svg/sprite_social.svg#twitter"></use>
 							</svg>
 						</a>
 						<a aria-label="Linkedin" class="social-link" href="#">
 							<svg class="social-icon">
-								<use xLink:href="img/social.svg#linkedin"></use>
+								<use xLink:href="svg/sprite_social.svg#linkedin"></use>
 							</svg>
 						</a>
 					</div>
@@ -268,17 +266,17 @@
 					<div class="member-social"> 
 						<a aria-label="Facebook" class="social-link" href="#">
 							<svg class="social-icon">
-								<use xLink:href="img/social.svg#facebook"></use>
+								<use xLink:href="svg/sprite_social.svg#facebook"></use>
 							</svg>
 						</a>
 						<a aria-label="Twitter" class="social-link" href="#">
 							<svg class="social-icon">
-								<use xLink:href="img/social.svg#twitter"></use>
+								<use xLink:href="svg/sprite_social.svg#twitter"></use>
 							</svg>
 						</a>
 						<a aria-label="Linkedin" class="social-link" href="#">
 							<svg class="social-icon">
-								<use xLink:href="img/social.svg#linkedin"></use>
+								<use xLink:href="svg/sprite_social.svg#linkedin"></use>
 							</svg>
 						</a>
 					</div>
@@ -290,7 +288,7 @@
 	<section class="testimonials">
 		<div class="cont">
 			<svg class="quotes">
-				<use xlink:href="img/sprite_hex.svg#hex_quotes"></use>
+				<use xlink:href="svg/sprite_hex.svg#hex_quotes"></use>
 			</svg>
             <div class="swiper-container">
 				<!-- Additional required wrapper -->
@@ -346,14 +344,14 @@
 					<div class="swiper-button-prev">
 						<a aria-label="Left" class="slider__nav slider__nav-left" href="#" onclick="minusSlide()">
 							<svg class="arrow-icon">
-								<use xlink:href="img/sprite-arrows.svg#arrow_left"></use>
+								<use xlink:href="svg/sprite-arrows.svg#arrow_left"></use>
 							</svg>
 						</a>
 					</div>
 					<div class="swiper-button-next">
 						<a aria-label="Right" class="slider__nav slider__nav-right" href="#" onclick="plusSlide()">
 							<svg class="arrow-icon">
-								<use xlink:href="img/sprite-arrows.svg#arrow_right"></use>
+								<use xlink:href="svg/sprite-arrows.svg#arrow_right"></use>
 							</svg>
 						</a>
 					</div>
@@ -366,7 +364,7 @@
 			<div class="map-wrap">
 				<div class="hex-adress" id="adress">
 					<svg>
-						<use xlink:href="img/sprite_hex.svg#hex_adress"></use>
+						<use xlink:href="svg/sprite_hex.svg#hex_adress"></use>
 					</svg>
 				</div>
 				<div class="map-show">
@@ -380,7 +378,7 @@
 	<footer>
 		<div class="logo-footer">
 			<svg class="logo-footer__img">
-				<use xlink:href="img/sprite_hex.svg#hex_d"></use>
+				<use xlink:href="svg/sprite_hex.svg#hex_d"></use>
 			</svg>
 			<span class="logo-footer__text"> Daisy</span>
 		</div>
