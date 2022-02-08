@@ -547,12 +547,12 @@ body .team .section-title {
 }
 body .team .team-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 body .team .team-member {
   text-align: center;
   max-width: 300px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 body .team .team-member .member-position {
   font-size: 20px;
